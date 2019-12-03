@@ -1,22 +1,79 @@
 .App {
+  background-color: #720c27;
+  min-height: 800px;
+  width: 600px;
+  margin: 40px auto;
+}
+h1 {
+  color: #fff;
   text-align: center;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
+.to-do-form input {
+  background-color: rgb(27, 112, 137);
+  border: 0;
+  width: 400px;
+  height: 70px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.to-do-form button {
+  background-color: hotpink;
+  width: 90px;
+  height: 70px;
+  float: right;
+  margin: 25px;
+  /* padding: 25px 0px 25px 0px;
+  margin: 20px; */
+  font-size: 24px;
+  border-radius: 70px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.App-link {
-  color: #09d3ac;
+.list {
+  color: #fff;
+  width: 500px;
+  background-color: rgb(137, 160, 210);
+  height: 70px;
+  margin: 25px auto;
+  margin-left: 29px;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list input[type="checkbox"] {
+  margin: 25px;
+  font-size: 10%;
+  cursor: pointer;
+}
+
+.list p {
+  flex-grow: 1;
+  /* float: left; */
+  padding-top: 12px;
+  font-size: 25px;
+  /* position: relative; */
+}
+
+.list span {
+  /* position: absolute;
+  right: 10px; */
+  align-self: end;
+  /* float: right; */
+  cursor: pointer;
+}
+.fa-trash {
+  padding: 25px;
+  margin: 0 5px;
+}
+
+.trash {
+  font-size: 90%;
 }
